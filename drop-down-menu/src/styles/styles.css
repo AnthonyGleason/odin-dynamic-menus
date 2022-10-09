@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    height: 5%;
+    width: 50%;
+    margin-top: 20px;
+    background-color: rgb(87, 23, 23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.header-text{
+    background-color: rgb(255, 233, 205);
+    padding: 5px;
+}
+.header-text:hover{
+    background-color: rgb(247, 211, 144);
+    cursor: pointer;
+}
+.drop-down-menu{
+    background-color: rgb(255, 233, 205);
+    display:none;
+    position: absolute;
+    border-top: 0px;
+}
+.drop-down-menu-item{
+    list-style: none;
+}
+.drop-down-menu-item:hover{
+    background-color: rgb(247, 211, 144);
+    cursor: pointer;
+}

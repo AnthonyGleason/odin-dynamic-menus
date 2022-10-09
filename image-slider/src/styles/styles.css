@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-back-arrow,
+.img-forward-arrow{
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-style: solid;
+    margin: 10px;
+   
+    background-size: cover;
+}
+.img-back-arrow{
+    grid-area: back;
+    background-image: url(../assets/arrow-back.png);
+}
+.img-forward-arrow{
+    grid-area: forward;
+    justify-self: flex-end;
+    background-image: url(../assets/arrow-forward.png);
+}
+.img-slider{
+    height: 40%;
+    width: 40%;
+    background-color: ghostwhite;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 5fr 1fr;
+    grid-template-areas: 
+    "nulla nulle nullf"
+    "nullb image nullg"
+    "back image forward"
+    "nullc image nullh"
+    "nulld dots nulli";
+}
+.img-container{
+    grid-area: image;
+    border-style: solid;
+    border-radius: 15px;
+}
+.img-container img{
+    height: 100%;
+    width: 100%;
+}
+.img-dot-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: dots;
+}
+.img-dot{
+    border-style: solid;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+/* Cursor styling */
+.img-back-arrow:hover,
+.img-forward-arrow:hover{
+    cursor: pointer;
+}
+.img-dot:hover{
+    cursor: pointer;
+}
